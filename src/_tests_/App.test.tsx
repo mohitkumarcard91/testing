@@ -1,6 +1,3 @@
-// memoryrouter -  it is used for the routing check
-
-
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import App from "../App";
@@ -10,23 +7,21 @@ describe("App Routing", () => {
     render(
       <MemoryRouter initialEntries={["/"]}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
-    expect(
-      screen.getByRole("heading", { name: /login/i })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /login/i })).toBeInTheDocument();
   });
 
   test("renders HomePage on /home route", () => {
     render(
       <MemoryRouter initialEntries={["/home"]}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(
-      screen.getByRole("heading", { name: /home page/i })
+      screen.getByRole("heading", { name: /home page/i }),
     ).toBeInTheDocument();
   });
 });
