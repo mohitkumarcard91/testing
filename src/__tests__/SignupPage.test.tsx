@@ -21,13 +21,15 @@ describe("Login Page", () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByRole("heading", { name: /SignUp/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /SignUp/i }),
+    ).toBeInTheDocument();
   });
 
   test("shows error when submitting empty form", () => {
     render(
       <MemoryRouter>
-        <Signup/>
+        <Signup />
       </MemoryRouter>,
     );
 

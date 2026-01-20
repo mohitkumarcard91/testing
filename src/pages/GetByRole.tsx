@@ -8,7 +8,12 @@ export default function GetByRole() {
         placeholder="Search..."
         className="border p-2 mb-4"
       />
-      <input type="number" aria-label="Age" placeholder="Enter your age" className="border p-2 mb-4" />
+      <input
+        type="number"
+        aria-label="Age"
+        placeholder="Enter your age"
+        className="border p-2 mb-4"
+      />
       <button
         aria-label="Click Me"
         className="px-4 py-2 bg-blue-500 text-white rounded"

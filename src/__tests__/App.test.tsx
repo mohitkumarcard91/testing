@@ -7,7 +7,7 @@ describe("App Routing", () => {
     render(
       <MemoryRouter initialEntries={["/"]}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const heading = await screen.findByRole("heading", {
@@ -21,7 +21,7 @@ describe("App Routing", () => {
     render(
       <MemoryRouter initialEntries={["/home"]}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const heading = await screen.findByRole("heading", {
@@ -35,7 +35,7 @@ describe("App Routing", () => {
     render(
       <MemoryRouter initialEntries={["/signup"]}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const heading = await screen.findByRole("heading", {

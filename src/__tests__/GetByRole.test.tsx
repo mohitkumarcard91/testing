@@ -16,7 +16,7 @@ describe("GetByRole Page", () => {
     expect(numberInput).toBeInTheDocument();
     expect(input).toBeInTheDocument();
   });
- 
+
   test("find the button", () => {
     const button = screen.getByRole("button");
     expect(button).toBeInTheDocument();
