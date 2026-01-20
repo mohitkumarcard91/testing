@@ -47,7 +47,9 @@ describe("Login Page", () => {
       </MemoryRouter>,
     );
 
-    fireEvent.click(screen.getByRole("button", { name: /login/i }));
+    const loginButton = screen.getByRole("button", { name: /login/i });
+
+    fireEvent.click(loginButton);
 
     expect(screen.getByRole("alert")).toHaveTextContent(
       "All fields are required",
